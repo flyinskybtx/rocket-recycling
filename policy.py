@@ -28,7 +28,7 @@ class PositionalMapping(nn.Module):
     """
 
     def __init__(self, input_dim, L=5, scale=1.0):
-        super(PositionalMapping, self).__init__()
+        super().__init__()
         self.L = L
         self.output_dim = input_dim * (L*2 + 1)
         self.scale = scale
